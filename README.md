@@ -20,6 +20,8 @@
 
 ## NPM 包 使用
 
+不仅仅复用文件，也复用已经上传到 `WebGL` 的纹理，减少切换模型时上传纹理耗时
+
 ```js
 import { GLTFLoader } from 'three-platfromzie/examples/jsm/loaders/GLTFLoader';
 import GLTFMerge from 'gltf-merge';
@@ -30,6 +32,9 @@ const gltfLoader = new GLTFLoader();
 gltfLoader.loadAsync('test.glb').then(gltf => {
   gltf.scene.traverse(gltfMerge.updateSharedTexture);
 });
+
+// 结束使用后
+gltfMerge.dispose();
 ```
 
 ## TODO
