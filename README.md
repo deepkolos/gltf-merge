@@ -15,7 +15,7 @@
 
 ```sh
 > npm i gltf-merge -S
-> gltf-merge -h
+> gltf-merge -i ./exmaples/glb
 ```
 
 ## NPM 包 使用
