@@ -32,7 +32,7 @@ const main = async (args: Args) => {
     const resMap = {};
     makeSureDir(outdir);
 
-    walkDir(dir, async (file, isDir) => {
+    await walkDir(dir, async (file, isDir) => {
       const ext = path.extname(file);
       const isGLTF = !!ext.match(/\.gltf$/i);
       const isGLB = !!ext.match(/\.glb$/i);
