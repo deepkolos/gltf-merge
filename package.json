@@ -1,6 +1,6 @@
 {
   "name": "gltf-merge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "一个用于 gltf 合并的工具，适用于模型换材质换网格的场景",
   "bin": {
     "gltf-merge": "dist/gltf-merge.cli.js"
